@@ -1,21 +1,17 @@
 pipeline{
-
     agent any
     stages{
         stage("build"){
             steps{
-               echo 'building the application'
+               echo "building the application"
             }
         }
 
-        atage("deploy"){
+        stage("deploy"){
             steps {
-               echo 'deploying the application'
+               echo "deploying the application"
             }
         }
     }
 }
 
-node {
-    //script
-}
