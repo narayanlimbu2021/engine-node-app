@@ -3,7 +3,7 @@ def defBuild(){
 }
 
 def defDeploy(){
-    echo "application is deploying ... from script ${params.VERISON}"
+    echo "application is deploying ... from script"
 }
 
 return this
