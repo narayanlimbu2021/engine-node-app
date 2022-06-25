@@ -6,8 +6,6 @@ pipeline{
         stage("init"){
             steps{
                 script{
-
-                   echo 'Installation Stage'
                    docker build .
                 }
             }
