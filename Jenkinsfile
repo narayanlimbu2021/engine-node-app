@@ -1,11 +1,9 @@
 pipeline{
-    agent any
+    agent { dockerfile true }
     stages{
         stage("init"){
             steps{
-                docker{
-                 docker build .
-                }
+                echo 'first step'
             }
         }
         stage("build"){
