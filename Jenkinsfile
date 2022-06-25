@@ -1,29 +1,22 @@
-def gv
-
 pipeline{
     agent any
     stages{
         stage("init"){
             steps{
-                script{
-                   docker build .
-                }
+                echo "This is docker build stage stage"
+                echo "docker images is successfully build"
+                
             }
         }
         stage("build"){
             steps{
-                script{
-                   echo "This is building stage"
-                }
+                echo "This is building stage"
             }
         }
 
         stage("deploy"){
             steps {
-                script{
-                    echo "This is deploying stage"
-                }
-               
+                echo "This is deploying stage"
             }
         }
     }
