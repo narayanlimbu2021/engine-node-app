@@ -3,10 +3,9 @@ pipeline{
     stages{
         stage("init"){
             steps{
-                echo "This is docker build stage stage"
-                docker build .
-                echo "docker images is successfully build"
-                
+                docker{
+                 docker build .
+                }
             }
         }
         stage("build"){
