@@ -6,14 +6,14 @@ pipeline{
         stage("init"){
             steps{
                 script{
-                   gv= load "script.groovy"
+                   echo 'Installation'
                 }
             }
         }
         stage("build"){
             steps{
                 script{
-                   gv.defBuild()
+                   echo "This is building stage"
                 }
             }
         }
@@ -21,8 +21,7 @@ pipeline{
         stage("deploy"){
             steps {
                 script{
-                    gv.defDeploy()
-
+                    echo "This is deploying stage"
                 }
                
             }
